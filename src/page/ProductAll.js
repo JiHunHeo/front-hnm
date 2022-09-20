@@ -9,8 +9,7 @@ const ProductAll = () => {
     const getProducts = async () => {
         let searchQuery = query.get('q') || '';
         console.log('쿼리 값은 ??', searchQuery);
-        let url = `https://my-json-server.typicode.com/JiHunHeo/
-        front-hnm/products?q=${searchQuery}`;
+        let url = `https://my-json-server.typicode.com/JiHunHeo/My-json-server/products?q=${searchQuery}`;
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);
