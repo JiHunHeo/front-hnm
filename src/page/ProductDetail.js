@@ -4,7 +4,7 @@ import { Container, Row, Col, Dropdown, Button } from 'react-bootstrap';
 
 const ProductDetail = () => {
     let { id } = useParams();
-    const [product, setProduct] = useState('');
+    const [product, setProduct] = useState(null);
     const getProductDetail = async () => {
         let url = `https://my-json-server.typicode.com/JiHunHeo/
         front-hnm/products/${id}`;
